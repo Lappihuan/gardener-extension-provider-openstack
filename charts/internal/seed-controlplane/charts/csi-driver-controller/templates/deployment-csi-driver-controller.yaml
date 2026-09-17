@@ -51,6 +51,7 @@ spec:
         {{- end }}
         - --v=3
         - --provide-node-service=false
+        - --with-topology=false
         {{- if .Values.highQpsMode }}
         - --kube-api-qps=100
         - --kube-api-burst=200

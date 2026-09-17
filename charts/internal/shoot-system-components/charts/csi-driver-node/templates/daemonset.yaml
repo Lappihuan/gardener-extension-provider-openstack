@@ -51,6 +51,7 @@ spec:
         - --vmodule=mount*=4,nodeserver=3,utils=2,driver=4,openstack=4,client=4,server=4,controllerserver=4
         - --node-service-no-os-client=true
         - --provide-controller-service=false
+        - --with-topology=false
         env:
         - name: CSI_ENDPOINT
           value: unix://{{ .Values.socketPath }}
